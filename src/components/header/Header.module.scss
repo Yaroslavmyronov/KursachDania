@@ -1,0 +1,30 @@
+.header {
+  .container {
+    @apply flex items-center box-content mx-auto px-[0.9375rem];
+    min-height: 4.75rem;
+    max-width: 81.25rem;
+    .logo {
+      @apply font-bold;
+      font-size:  1.875rem;
+    }
+  }
+  .menu {
+    @apply flex flex-auto justify-center items-center;
+    .list {
+      @apply flex;
+      gap: clamp(1.25rem, 0.8859223301rem + 1.9417475728vw, 2.5rem);
+      .item {
+        @apply flex items-center;
+        .link {
+          @apply text-2xl font-normal leading-6;
+        }
+      }
+    }
+  }
+  .button {
+    @apply cursor-pointer flex items-center gap-2 pr-11 pl-11 pb-3 pt-3 bg-black rounded-lg text-white;
+    .buttonText {
+      @apply text-xl font-normal;
+    }
+  }
+}

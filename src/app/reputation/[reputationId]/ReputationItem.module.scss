@@ -1,0 +1,31 @@
+.main {
+  @apply flex-auto ;
+  .information {
+    @apply flex-auto mt-24;
+    margin-bottom: 4.25rem;
+    .title {
+      @apply font-extrabold text-6xl text-center;
+      flex-wrap: wrap;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+}
+
+.container {
+  max-width: 81.25rem;
+  margin: 0px auto;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center; 
+}
+
+.image {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}

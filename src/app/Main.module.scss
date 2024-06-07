@@ -1,0 +1,38 @@
+.main {
+  @apply flex-auto ;
+  .information {
+    @apply flex-auto mt-24;
+    margin-bottom: 4.25rem;
+    h1 {
+      @apply font-extrabold text-7xl text-center;
+    }
+  }
+  .whatIsRating {
+    h1 {
+      margin-bottom: 4.25rem;
+    }
+    .rating {
+      @apply grid grid-cols-2 gap-4 items-center;
+      .item {
+        @apply flex items-center gap-2;
+        .circle {
+          @apply p-6 bg-gray-700 text-white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.reputationList {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 81.25rem;
+  margin: 0px auto;
+}
+
