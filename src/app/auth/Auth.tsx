@@ -35,7 +35,7 @@ export function Auth () {
     mutate(data);
   }
   return (
-    <div className='flex min-h-screen'>
+    <div className='flex min-h-screen' style={{backgroundColor: 'rgb(243 244 246)'}}>
     <form
       className='w-1/4 m-auto shadow bg-sidebar rounded-xl p-layout p-4'
       onSubmit={handleSubmit(onSubmit)}

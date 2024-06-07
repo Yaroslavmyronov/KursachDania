@@ -4,7 +4,8 @@
     @apply flex-auto mt-24;
     margin-bottom: 2.25rem;
     h1 {
-      @apply font-extrabold text-7xl;
+      @apply font-extrabold;
+      font-size: 1.5rem;
     }
   }
   .whatIsRating {

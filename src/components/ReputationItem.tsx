@@ -8,15 +8,20 @@ interface ReputationItemProps {
 
 export const ReputationItem: FC<ReputationItemProps> = ({ reputation }) => {
   return (
-    <article className='flex flex-none min-w-[350px]'>
-      <Link className='flex flex-col flex-1 pt-0 text-black cursor-pointer' href={`/reputation/${reputation.title}`} style={{width:'350px'}}>
-        <div className='relative overflow-hidden flex-shrink-0 flex-grow-0 min-h-[350px] bg-white mb-5'>
-          <img className='object-cover w-full h-full' src={reputation.logoUrl} alt='' style={{ borderRadius: '50%' }} />
+    <div key={reputation.id} className="group relative" style={{marginBottom: '24px'}}>
+      <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
+        <img
+          src={reputation.logoUrl}
+          alt=''
+          className="h-full w-full object-cover object-center"
+        />
         </div>
-        <span className='text-center'>
-          {reputation.title}
-        </span>
-      </Link>
-    </article>
+          <h3 className="mt-3 text-sm text-gray-500">
+            <Link  href={`/reputation/${reputation.id}`}>
+              <span className="absolute inset-0" text-base font-semibold text-gray-900/>
+                {reputation.title}
+            </Link>
+          </h3>
+      </div>
   );
 }
